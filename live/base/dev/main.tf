@@ -1,5 +1,5 @@
 module "network" {
-  source = "./modules/network"
+  source = "../../../modules/network"
 
   compartment_ocid     = var.compartment_ocid
   project_name         = var.project_name

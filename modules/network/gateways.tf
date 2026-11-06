@@ -21,7 +21,7 @@ resource "oci_core_service_gateway" "service_gw" {
   display_name   = "${var.project_name}-service-gw"
 
   services {
-    service_id = data.oci_core_services.all.services[0].id
+    service_id = data.oci_core_services.all.services[1].id
   }
 
   freeform_tags = var.tags
